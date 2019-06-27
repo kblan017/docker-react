@@ -1,9 +1,7 @@
-sudo: required 
+sudo:  false
 services: 
   - docker
-  
-install:
-  - bundle install
+
 before_install: 
   - gem install bundler
   - docker build -t kblan017/docker-react -f Dockerfile.dev .
